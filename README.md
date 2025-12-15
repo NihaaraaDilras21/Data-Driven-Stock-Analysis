@@ -97,14 +97,12 @@ The Power BI dashboard provides:
 ---
 ## 🗃️ Project Structure
 
-Data-Driven-Stock-Analysis/
-│
+├── code/                 # Python scripts for data processing & analysis
 ├── data/                 # Cleaned & processed datasets
 ├── screenshots/          # Power BI dashboard images
 ├── NIFTY50_Stock_Analysis.pbix
 ├── README.md
 ├── requirements.txt
-
 
 ## 📁 Project Deliverables
 - Cleaned and processed stock market dataset
@@ -119,6 +117,94 @@ Data-Driven-Stock-Analysis/
 The dataset used for this project is provided as part of the GUVI project resources.
 
 ---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/NihaaraaDilras21/Data-Driven-Stock-Analysis.git
+cd Data-Driven-Stock-Analysis
+```
+
+---
+
+### 2️⃣ Create a Virtual Environment (Optional but Recommended)
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**Mac / Linux**
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Required Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4️⃣ Run Data Processing Scripts
+Navigate to the `code` folder:
+```bash
+cd code
+```
+
+Run the scripts in the following order:
+```bash
+python read_one_yaml.py
+python combine_yaml_to_csv.py
+python clean_data.py
+python add_returns.py
+python split_stocks.py
+```
+
+---
+
+### 5️⃣ Run Analysis Scripts
+```bash
+python analysis_1_volatility.py
+python analysis_2_top_gainers.py
+python analysis_3_sector_avg.py
+python analysis_4_monthly_gainers_losers.py
+python analysis_5_correlation_matrix.py
+python analysis_6_prepare_monthly_trend.py
+```
+
+These scripts generate cleaned and aggregated CSV files inside the **`data/`** folder.
+
+---
+
+### 6️⃣ Load Data into Power BI
+1. Open **`NIFTY50_Stock_Analysis.pbix`** using Power BI Desktop  
+2. Refresh data if required  
+3. Explore interactive dashboards and insights
+
+---
+
+### 🔎 Optional: Database Integration
+If PostgreSQL is configured locally:
+```bash
+python load_to_postgres.py
+```
+
+---
+
+### 📝 Notes
+- All processed datasets are saved in the **`data/`** folder  
+- Dashboard screenshots are available in the **`screenshots/`** folder  
+- Power BI is used for final visualization and insights
+
 
 ## 📊 Power BI Dashboard Preview
 
