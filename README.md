@@ -95,6 +95,16 @@ The Power BI dashboard provides:
 - **Performance Tracking:** Monitor monthly and yearly stock behavior
 
 ---
+## 🗃️ Project Structure
+
+Data-Driven-Stock-Analysis/
+│
+├── data/                 # Cleaned & processed datasets
+├── screenshots/          # Power BI dashboard images
+├── NIFTY50_Stock_Analysis.pbix
+├── README.md
+├── requirements.txt
+
 
 ## 📁 Project Deliverables
 - Cleaned and processed stock market dataset
@@ -105,16 +115,49 @@ The Power BI dashboard provides:
 
 ---
 
-## ✅ Conclusion
-This project demonstrates how data analytics and visualization can simplify complex stock market data.  
-By combining Python, SQL, and Power BI, the analysis provides actionable insights that help investors and analysts make informed decisions.
-
----
-
 ## 🔗 Dataset
 The dataset used for this project is provided as part of the GUVI project resources.
 
 ---
+
+## 📊 Power BI Dashboard Preview
+
+### 🔹 Overall Dashboard
+![Dashboard Overview](screenshots/dashboard_overview.png)
+
+### 🔹 Top 10 Most Volatile Stocks
+![Top 10 Volatile Stocks](screenshots/top_10_volatile_stocks.png)
+
+### 🔹 Top 5 Highest Gaining Stocks
+![Top 5 Gainers](screenshots/top_5_gainers.png)
+
+### 🔹 Sector-wise Average Daily Returns
+![Sector-wise Returns](screenshots/sector_wise_returns.png)
+
+### 🔹 Monthly Gainers vs Losers
+![Monthly Gainers vs Losers](screenshots/monthly_gainers_losers.png)
+
+### 🔹 Stock Correlation Table
+![Correlation Table](screenshots/correlation_table.png)
+
+---
+
+## 📈 Key Insights
+
+- A small set of stocks contributed disproportionately to overall market volatility, indicating higher risk exposure in specific companies.
+- The top gaining stocks showed strong cumulative returns, outperforming the broader NIFTY50 index during the analysis period.
+- Sector-wise analysis revealed that certain sectors consistently delivered higher average daily returns, highlighting sector rotation trends.
+- Monthly gainers vs losers analysis showed increased market volatility during specific months, reflecting short-term market sentiment shifts.
+- Correlation analysis indicated strong positive correlations among stocks within the same sector, while inter-sector correlations remained relatively moderate.
+
+---
+
+## ✅ Results & Conclusion
+
+- Successfully transformed raw stock market data into meaningful insights using Python, SQL, and Power BI.
+- Built an interactive Power BI dashboard enabling easy exploration of volatility, returns, sector performance, and correlations.
+- The project demonstrates how data analytics can support informed investment decisions and market trend analysis.
+- This dashboard can be extended further with real-time data integration and predictive analytics.
 
 ## 🏷️ Technical Tags
 `Python` `SQL` `Power BI` `Data Analysis` `Stock Market` `NIFTY50` `Visualization`
